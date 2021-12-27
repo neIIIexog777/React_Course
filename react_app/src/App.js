@@ -1,4 +1,7 @@
 import React from "react";
+import ClassComponent from "./ClassComponent";
+import FuncComponent from "./FuncComponent";
+
 
 const person = {
   name: "Pavel",
@@ -10,15 +13,12 @@ const person = {
 
 
 
-function Welcome({props}) {
-  return <h1>Привет, {props.name} {props.lastname}!</h1>;
-}
-
 function App() {
  return (
-
-    <Welcome props={person}  />
- 
+   <div>
+  <ClassComponent name = "Pavel Semenov"/>,
+  <FuncComponent props={person} />
+   </div>
   )
 
 }
